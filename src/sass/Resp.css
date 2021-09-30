@@ -1,0 +1,310 @@
+@media (max-width: 1200px) {
+  .galleryS .galleryTab {
+    -ms-grid-columns: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+@media (min-width: 1350px) {
+  .blog-card:hover:before {
+    -webkit-transform: scale(60);
+            transform: scale(60);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section .galleryS .galleryTab {
+    grid-auto-rows: 36rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .navBox .disN {
+    display: none;
+  }
+  .navBox h4 {
+    top: 6.1rem !important;
+    right: 3rem !important;
+    left: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .sContainer .high {
+    height: auto !important;
+  }
+  .contentBox .respC2 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .contentBox .respC2 .respL {
+    width: 100% !important;
+    text-align: center;
+  }
+  .contentBox .respC2 .respL svg {
+    width: 80%;
+  }
+  .contentBox .respC2 .respR {
+    width: 100% !important;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .contentBox .respC2 .respR h1, .contentBox .respC2 .respR p {
+    text-align: center;
+  }
+  .contentBox .respC2 .respR .p1 {
+    text-align: center;
+  }
+  .contentBox .resC1 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .contentBox .resC1 .respL {
+    width: 100% !important;
+  }
+  .contentBox .resC1 .respL h1 {
+    text-align: center;
+  }
+  .contentBox .resC1 .respL p {
+    text-align: center;
+  }
+  .contentBox .resC1 .respL .leftLinks {
+    text-align: center;
+  }
+  .contentBox .resC1 .respL .leftLinks img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .contentBox .resC1 .respL .leftBtn {
+    text-align: center;
+  }
+  .contentBox .resC1 .respL .leftBtn button {
+    margin: 0 4rem;
+  }
+  .contentBox .resC1 .respR {
+    width: 100% !important;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+  .contentBox .resC1 .respS {
+    text-align: center;
+  }
+  .contentBox .resC1 .respS svg {
+    width: 80%;
+  }
+  .galleryS .galleryTab {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    grid-auto-rows: 300px !important;
+  }
+  .dataContact h2 {
+    font-size: 3rem;
+  }
+  .conLinks a {
+    padding: 2rem 1rem;
+  }
+  .conLinks a img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .expCard3 h1 {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .expCard3 p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .testimon .testiItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .testimon .testiItem .pI {
+    padding-right: 0;
+  }
+  .testimon .testiItem .tItems {
+    width: 100% !important;
+  }
+  .testimon .testiItem .tItems .sI {
+    padding-top: 4rem;
+    text-align: center;
+  }
+  .testimon .testiItem .tItems .sI svg {
+    width: 80%;
+    height: 80%;
+  }
+  .testimon .testiItem .tItems2 {
+    width: 100%;
+  }
+  .testimon .testiItem .tItems2 .sahilI {
+    max-width: none;
+    width: 50%;
+  }
+}
+
+@media (max-width: 715px) {
+  .section .sContainer input {
+    width: 100%;
+  }
+  .section .sContainer .sBox button {
+    right: 1.3rem;
+  }
+  .section .sContainer .content-box {
+    position: static;
+    max-width: none;
+  }
+  .section .sContainer .content-box h1,
+  .section .sContainer .content-box p {
+    text-align: center;
+  }
+  .learnSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .learnSec img {
+    margin-right: 4rem;
+  }
+  .learnSec button {
+    width: 100%;
+  }
+  .smallBar button {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .expCards {
+    gap: 4rem 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .galleryS .galleryTab {
+    grid-auto-rows: 280px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .conLinks a {
+    padding: 2rem 1rem;
+  }
+  .conLinks a img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .galleryS .galleryTab {
+    grid-auto-rows: 245px !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .smallBar {
+    display: none;
+  }
+  .treeA {
+    display: block;
+  }
+  .MuiAccordion-root.Mui-expanded {
+    margin: 0 3rem;
+  }
+  .treeA {
+    margin: 0 3rem;
+  }
+  .treeA .aSum {
+    font-size: 2rem;
+  }
+  .treeA .eMore {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .treeA .sBar span {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .treeA .MuiAccordion-root.Mui-expanded:last-child {
+    margin: 0 3rem;
+  }
+  .treeA .MuiAccordionSummary-root {
+    background-color: #5624d0;
+    color: #fff;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 510px) {
+  .conLinks a {
+    padding: 2rem .5rem;
+  }
+  .conLinks a img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .galleryS .galleryTab {
+    grid-auto-rows: 200px !important;
+  }
+  .section .sContainer .infoS .tab {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 510px) and (max-width: 460px) {
+  .section .sContainer .infoS .tab {
+    font-size: 1.5rem;
+    min-width: 4rem;
+  }
+  .contentBox .resC1 .respL .leftBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contentBox .resC1 .respL .leftBtn button {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .section .sContainer .contentBox .contentItem .leftB p {
+    line-height: normal;
+  }
+}
+
+@media (max-width: 510px) and (max-width: 430px) {
+  .section .sContainer .infoS .tab {
+    font-size: 1.2rem;
+    min-width: 0rem;
+  }
+  .galleryS .galleryTab {
+    grid-auto-rows: 180px !important;
+  }
+}
+
+@media (max-width: 510px) and (max-width: 390px) {
+  .section .sContainer .infoS .tab {
+    font-size: 1rem;
+  }
+  .conLinks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 510px) and (max-width: 370px) {
+  .sContainer2 .heading {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Resp.css.map */

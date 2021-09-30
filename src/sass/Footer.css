@@ -1,0 +1,84 @@
+.footer {
+  height: 25rem;
+  background-color: #1d1c1f;
+}
+
+.footer .fItems2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .fItems2 img {
+  width: 15rem;
+  height: auto;
+  margin-left: 4.5rem;
+}
+
+.footer .fItems2 span {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.9;
+  padding-right: 2.5rem;
+}
+
+.footer .fItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 2rem;
+}
+
+.footer .fLinks {
+  padding: 0 6rem 0 3rem;
+}
+
+.footer li {
+  list-style: none;
+  padding-bottom: 0.8rem;
+}
+
+.footer li a {
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.4rem;
+  opacity: 0.9;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.footer li a:hover {
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer .fL {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 565px) {
+  .footer .fLinks {
+    padding: 0 0 0 3rem;
+  }
+  .footer li a {
+    font-size: 1rem;
+  }
+  .footer .fL img {
+    width: 25px;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,17 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin cFlex($jc1){
+    display: flex;
+    justify-content: $jc1;
+}
+@mixin aFlex {
+    display: flex;
+    align-items: center;   
+}
+@mixin bFlex{
+    display: flex;
+    justify-content: center;
+}
