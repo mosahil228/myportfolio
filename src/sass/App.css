@@ -18,9 +18,18 @@ html {
   display: none;
 }
 
-header {
+.header-l {
   background-color: #fff;
   z-index: 99;
+}
+
+.header-d {
+  background-color: #171c28;
+  z-index: 99;
+}
+
+.black {
+  background-color: red;
 }
 
 .navbar {
@@ -30,15 +39,32 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: red;
 }
 
-.navL h4 {
+.fff {
+  color: #fff;
+}
+
+.ooo {
+  color: #000;
+}
+
+.navL .h4-l {
   color: #000;
   font-weight: 700;
   position: absolute;
   left: 5.5rem;
   top: 5.1rem;
+  text-align: right;
+}
+
+.navL .h4-d {
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 5.5rem;
+  top: 5.1rem;
+  text-align: right;
 }
 
 .navLogo img {
@@ -76,7 +102,7 @@ header {
           align-items: center;
 }
 
-.navItems a {
+.navItems .na-l {
   text-decoration: none;
   color: #1c1d1f;
   text-align: center;
@@ -84,13 +110,24 @@ header {
   line-height: 1.4;
   font-size: 2.2rem;
   padding: 0 1.2rem;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
 }
 
-.navItems a:hover {
+.navItems .na-l:hover {
   color: #55198b;
   background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.navItems .na-d {
+  text-decoration: none;
+  color: #e7e2e2;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 0 1.2rem;
+}
+
+.navItems .na-d:hover {
+  color: #55198b;
   cursor: pointer;
 }
 
@@ -154,7 +191,6 @@ header {
     padding: 0;
   }
   .navbar .mIcon {
-    color: #000;
     font-size: 32px;
   }
   .navbar #tHam {
@@ -164,12 +200,14 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #fff;
   }
   .navbar .ibtn svg {
     font-size: 32px;
   }
   .wrapItems .lk1 {
     padding: 1rem;
+    font-size: 2rem;
   }
   .navBox .n3-none {
     display: none;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import "../sass/Home.css";
@@ -25,34 +25,38 @@ import Alert from "./Alert";
 import 'aos/dist/aos.css';
 import Sample from "../Svg/Sample.pdf";
 
-const HomeC = () => {
+const HomeC = (props) => {
+ 
+ 
   useEffect(()=>{
     AOS.init();
     AOS.refresh();
   }
   )
-  return (
-    <>
  
-      <section className="section">
+  return (
+    <div >
+
+      <section className="section"  >
         <div className="sContainer">
           <div className="alertCon">
             <Alert />
           </div>
         </div>
       </section>
-      <section id="home" className="section">
-        <div className="sContainer">
-          <div className="contentBox">
+      {/* style={{color: props.mode===1 ?"red" : "blue"}} */}
+      <section id="home" className="section" >
+        <div className="sContainer"  >
+          <div className="contentBox" >
             <div className="contentItem resC1">
-              <div className="leftB respL" data-aos="fade-right">
-                <h1>
+              <div className="leftB respL" data-aos="fade-right" >
+                <h1 className={props.mode ? "h1-d" : "h1-l"}>
                   Hi all, I'm Sahil
                   <span className="emoji">
                     <img src={waveH} alt="wave" />
                   </span>
                 </h1>
-                <p>
+                <p className={props.mode ? "ph-d" : "ph-l"}>
                   A passionate Full Stack Web Developer 🚀 having an experience
                   of building Web and Graphic designs with JavaScript / Reactjs
                   / Nodejs / and some other cool Softwares for graphic design.
@@ -119,14 +123,14 @@ const HomeC = () => {
       <section id="design" className="section ">
         <div className="sContainer ">
           <div className="contentBox ">
-            <h1 className="heading font">A brand collection of Design</h1>
+            <h1 className={props.mode ? "heading font fff" : "heading font ooo"}>A brand collection of Design</h1>
           </div>
         </div>
       </section>
       <section className="section" >
         <div className="sContainer ">
           <div  className="infoS contentBox " >
-            <LabTabs />
+            <LabTabs mode={props.mode} toggleMode={props.toggleMode} />
           </div>
         </div>
       </section>
@@ -137,7 +141,7 @@ const HomeC = () => {
             <div className="contentItem respC2">
               <SvgIcon2 />
               <div className="rightSkill respR " >
-                <h1> What I do..</h1>
+                <h1 className={props.mode ? "fff" : "ooo"} > What I do..</h1>
                 <p>
                   CRAZY FULL STACK DEVELOPER AND DESIGNER WHO MAKES DAILY CRAZY
                   THINGS IN TECH.
@@ -208,8 +212,8 @@ const HomeC = () => {
           </div>
         </div>
       </section>
-      <HomeMore />
-    </>
+      <HomeMore   mode={props.mode} toggleMode={props.toggleMode} />
+    </div>
   );
 };
 

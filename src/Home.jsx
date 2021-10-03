@@ -3,11 +3,11 @@ import HomeC from './Components/HomeC';
 
 
 
-const Home = () => {
+const Home = (props) => {
     
     return (
         <>
-        <HomeC/>
+        <HomeC mode={props.mode} toggleMode={props.toggleMode} />
         </>
     )
 }

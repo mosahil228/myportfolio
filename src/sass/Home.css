@@ -7,6 +7,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.fff {
+  color: #fff;
+}
+
+.ooo {
+  color: #000;
+}
+
 .alertM div {
   padding: 1rem;
   display: -webkit-box;
@@ -55,9 +63,22 @@
   padding-top: 3rem;
 }
 
+.section .sContainer .contentBox .contentItem .leftB p {
+  font-size: 2rem;
+  color: #868e96;
+  line-height: 4rem;
+}
+
+.section .sContainer .contentBox .contentItem .leftB .h1-l {
+  color: #000;
+}
+
+.section .sContainer .contentBox .contentItem .leftB .h1-d {
+  color: #fff;
+}
+
 .section .sContainer .contentBox .contentItem .leftB h1 {
   font-size: 5rem;
-  color: #000;
   line-height: 1.1;
   padding-bottom: 3rem;
 }
@@ -203,9 +224,15 @@
   transition: all 0.3s ease 0s;
 }
 
-.section .sContainer .contentBox .contentItem .leftB p {
+.section .sContainer .contentBox .contentItem .leftB .ph-l {
   font-size: 2rem;
   color: #868e96;
+  line-height: 4rem;
+}
+
+.section .sContainer .contentBox .contentItem .leftB .ph-d {
+  font-size: 2rem;
+  color: #e7e2e2;
   line-height: 4rem;
 }
 
@@ -479,11 +506,18 @@
           justify-content: center;
 }
 
+.section .sContainer .infoS .tab-l {
+  color: #000;
+  font-weight: 600;
+}
+
+.section .sContainer .infoS .tab-d {
+  color: #fff;
+}
+
 .section .sContainer .infoS .tab {
   font-size: 2rem;
-  color: #000;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
 
 .section .sContainer .infoS .lab {
@@ -600,7 +634,6 @@
 
 .section .sContainer .rightSkill h1 {
   font-size: 4rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 400;
   padding-bottom: 2.5rem;
@@ -713,11 +746,11 @@
 .section .galleryS .galleryTab .pic {
   position: relative;
   border-radius: 1rem;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
-          box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
+          box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
 }
 
 .section .galleryS .galleryTab .pic img {
@@ -783,7 +816,6 @@
 
 .leftC h1 {
   font-size: 4rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 400;
   padding-bottom: 2.5rem;
@@ -926,14 +958,25 @@
   }
 }
 
+.c-l {
+  background: #fff;
+}
+
+.cb-l {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cb-d {
+  -webkit-box-shadow: #fff 0px 1px 17px;
+          box-shadow: #fff 0px 1px 17px;
+}
+
 .contentBox2 {
   font-family: "Montserrat", sans-serif;
   padding: 0 1rem;
   margin: 4rem 4.5rem 0;
   border-radius: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background: #fff;
   background-size: 400% 400%;
   -webkit-animation: change 10s ease-in-out infinite;
           animation: change 10s ease-in-out infinite;
@@ -942,7 +985,6 @@
 
 .contentBox2 .education h1 {
   font-size: 4rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 400;
   padding-bottom: 2.5rem;
@@ -965,7 +1007,6 @@
 
 .contentBox2 .education h5 {
   font-size: 2.8rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 400;
   padding-bottom: 1rem;
@@ -973,7 +1014,6 @@
 
 .contentBox2 .education .p1 {
   font-size: 1.7rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 500;
   padding: 0.5rem 0;
@@ -992,7 +1032,6 @@
 
 .expCard h1 {
   font-size: 4rem;
-  color: #000;
   line-height: 1.1;
   font-weight: 400;
   padding-bottom: 2.5rem;
@@ -1023,17 +1062,25 @@
   position: relative;
 }
 
-.expCards .eCards {
-  font-family: "Be Vietnam Pro", sans-serif;
-  border-radius: 1.5rem;
+.expCards .c-l2 {
   background: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.expCards .eCards:hover {
+.expCards .c-l2:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.expCards .c-l3 {
+  -webkit-box-shadow: #fff 0px .5px 2px;
+          box-shadow: #fff 0px .5px 2px;
+}
+
+.expCards .eCards {
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 1.5rem;
 }
 
 .expCards .eCards .eCards1 {
@@ -1075,21 +1122,18 @@
 
 .expCards .eCards h2 {
   font-size: 2.5rem;
-  color: #000;
   font-weight: 400;
   text-align: center;
 }
 
 .expCards .eCards h1 {
   font-size: 2rem;
-  color: #000;
   font-weight: 400;
   text-align: center;
 }
 
 .expCards .eCards h3 {
   font-size: 1.8rem;
-  color: #000;
   font-weight: 400;
   text-align: center;
   padding-top: 0.5rem;
@@ -1113,7 +1157,6 @@
 }
 
 .bTitle {
-  color: #000;
   font-size: 2.2rem !important;
   line-height: 2.4rem;
   font-weight: 700;
@@ -1237,14 +1280,12 @@
 
 .tItems2 h4 {
   font-size: 2rem;
-  color: #000;
   font-weight: 400;
   padding-top: 1rem;
 }
 
 .tItems2 h2 {
   font-size: 2rem;
-  color: #000;
   font-weight: 700;
   padding-top: 0.5rem;
 }

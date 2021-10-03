@@ -8,7 +8,7 @@ import TabPanel from "@mui/lab/TabPanel";
 import 'aos/dist/aos.css';
 import Homecc ,{Homecc2} from "./Homecc";
 
-export default function LabTabs() {
+export default function LabTabs(props) {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (_event, newValue) => {
@@ -32,10 +32,10 @@ export default function LabTabs() {
               },
             }}
           >
-            <Tab className="tab" label="BANNERS" value="1" />
-            <Tab className="tab" label="LOGOS" value="2" />
-            <Tab className="tab" label="UI/UX" value="3" />
-            <Tab className="tab" label="WEB TEMPLATES" value="4" />
+            <Tab className={props.mode ? "tab-d tab" : "tab tab-l"} label="BANNERS" value="1" />
+            <Tab className={props.mode ? "tab-d tab" : "tab tab-l"}  label="LOGOS" value="2" />
+            <Tab className={props.mode ? "tab-d tab" : "tab tab-l"}  label="UI/UX" value="3" />
+            <Tab className={props.mode ? "tab-d tab" : "tab tab-l"}  label="WEB TEMPLATES" value="4" />
           </TabList>
         </Box>
         <TabPanel className="tabPanel" value="1">

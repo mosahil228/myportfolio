@@ -8,7 +8,7 @@ import Contact from "./Contact";
 
 
 
-const HomeMore = () => {
+const HomeMore = (props) => {
   return (
     <>
       <section id="proficiency" className="section">
@@ -16,7 +16,7 @@ const HomeMore = () => {
           <div className="contentBox high">
             <div className="contentItem resC1" >
               <div className="leftB leftC respL">
-                <h1>Proficiency</h1>
+                <h1 className={props.mode ? "fff" : "ooo"}> Proficiency</h1>
                 <div className="skillP">
                   <p>Frontend design</p>
                   <div className="meter">
@@ -39,10 +39,10 @@ const HomeMore = () => {
       </section>
       <section id="education" className="section" >
         <div className="sContainer">
-          <div className="contentBox2">
+          <div className={props.mode ? "contentBox2 cb-d" : "contentBox2 c-l cb-l"}>
             <div className="contentItem">
               <div className="education">
-                <h1>
+                <h1 className={props.mode ? "fff" : "ooo"}>
                   Education
                   <span>
                     <FaPencilAlt />
@@ -51,12 +51,12 @@ const HomeMore = () => {
                 <div className="eduDetail">
                   <img src={galimg} alt="logo" />
 
-                  <h5>Galgotias University </h5>
-                  <p className="p1">
+                  <h5 className={props.mode ? "fff" : "ooo"}>Galgotias University </h5>
+                  <p  className={props.mode ? "fff p1" : "ooo p1"}>
                     Bachelor of Science in Computer Science Engineering
                   </p>
-                  <p className="p1"> August 2019-April 2023 </p>
-                  <p className="p1">
+                  <p className={props.mode ? "fff p1" : "ooo p1"}> August 2019-April 2023 </p>
+                  <p className={props.mode ? "fff p1" : "ooo p1"}>
                     Ranked top 10% in the program. Took courses about Software
                     Engineering, Machine learning, Operating Systems, ...{" "}
                   </p>
@@ -71,19 +71,19 @@ const HomeMore = () => {
           <div className="contentBox">
             <div className="contentItem3">
               <div className="expCard">
-                <h1>Experiences</h1>
+                <h1 className={props.mode ? "fff" : "ooo"}>Experiences</h1>
               </div>
               <div className="expCards"  >
-                <ExpSec />
-                <ExpSec/>
-                <ExpSec />
+                <ExpSec mode={props.mode} toggleMode={props.toggleMode} />
+                <ExpSec mode={props.mode} toggleMode={props.toggleMode} />
+                <ExpSec mode={props.mode} toggleMode={props.toggleMode} />
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* blogs sectionn.................. */}
-      <ExpSec2 />
+      <ExpSec2 mode={props.mode} toggleMode={props.toggleMode}/>
       {/* blog section end ............ */}
       {/* testimonial..... */}
       <section id="testi" className="section">
@@ -91,7 +91,7 @@ const HomeMore = () => {
           <div className="contentBox">
             <div className="contentItem3">
               <div className="expCard expCard3 " >
-                <h1 className="testiH">Testimonials</h1>
+                <h1 className={props.mode ? "fff testiH" : "ooo testiH"}>Testimonials</h1>
               </div>
               <div className="testimon">
                 <div className="testiItem" >
@@ -110,7 +110,7 @@ const HomeMore = () => {
       </section>
       {/* contact section... */}
     
-      <Contact/>
+      <Contact mode={props.mode} toggleMode={props.toggleMode}/>
        
     </>
   );

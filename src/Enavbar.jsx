@@ -1,47 +1,52 @@
-import React from "react";
+import React  from "react";
 // import { Link } from "react-router-dom";
 import Hamburger from "./Components/Hamburger";
 import MuiSwitch from "./Components/MuiSwicth";
 import LG from "./images/LG.png";
 import { Link } from "react-scroll";
 
-const Enavbar = () => {
+
+const Enavbar = (props) => {
+ 
+ 
+ 
   return (
-    <>
-      <header id="header">
-        <nav>
+    <div  >
+      <header id="header"  className={props.mode ? "header-d" : "header-l"} >
+        <nav> 
           <div className="navbar">
-            <div className="navBox">
-              <Hamburger className="hburger" />
+            <div className="navBox " >
+              <Hamburger className="hburger" mode={props.mode} toggleMode={props.toggleMode}/>
               <div className="navL">
                 <div className="navLogo">
                   <img src={LG} alt="logo" />
                   
                 </div>
-                <h4>GRAPHIC/WEB DOVELOPER</h4>
+                <h4 className={props.mode ? "h4-d" : "h4-l"} >GRAPHIC/WEB DOVELOPER</h4>
                   
               </div>
-              <div className="navR8 disN">
-                <div className="navItems ">
-                  <Link to="skills">Skills</Link>
+              <div className="navR8 disN" >
+                <div className="navItems " >
+                  <Link className={props.mode ? "na-d" : "na-l"}  style={{color: `$"{props.mode}"`}} to="skills" >Skills</Link>
                 </div>
                 <div className="navItems ">
-                  <Link to="experience">Work experience</Link>
+                  <Link className={props.mode ? "na-d" : "na-l"} to="experience">Work experience</Link>
                 </div>
                 <div className="navItems ">
-                  <Link to="testi">Testimonials</Link>
+                  <Link className={props.mode ? "na-d" : "na-l"} to="testi">Testimonials</Link>
                 </div>
                
                 <div className="navItems ">
-                  <Link to="design">Designs</Link>
+                  <Link className={props.mode ? "na-d" : "na-l"} to="design">Designs</Link>
                 </div>
                 <div className="navItems ">
-                  <Link to="blogs">blogs</Link>
+                  <Link className={props.mode ? "na-d" : "na-l"} to="blogs">blogs</Link>
                 </div>
                 <div className="navItems ">
-                  <Link to="contact">Contact me</Link>
+                  <Link className={props.mode ? "na-d" : "na-l"} to="contact">Contact me</Link>
                 </div>
-                <MuiSwitch />
+                <MuiSwitch toggleMode={props.toggleMode} />
+                
                 
               </div>
            
@@ -49,7 +54,7 @@ const Enavbar = () => {
           </div>
         </nav>
       </header>
-    </>
+    </div>
   );
 };
 

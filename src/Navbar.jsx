@@ -1,10 +1,12 @@
 import React from 'react';
 import Enavbar from './Enavbar';
 
-const Navbar=()=>{
+const Navbar=(props)=>{
+   
+    
     return(
         <>
-        <Enavbar/>
+        <Enavbar mode={props.mode} toggleMode={props.toggleMode} />
         </>
     )
 }

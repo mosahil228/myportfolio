@@ -12,11 +12,14 @@ $nav-clr: #1c1d1f;
 $bg-clr: #fff;
 $l-clr: #5624d0;
 $un-clr: #6600FF;
+$dark-mode:#171c28;
+
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 .navbar {
   .HamBMM{
     display: none;
@@ -24,14 +27,22 @@ html {
 }
 
 // header section ............//////////////////////@@@@@@@@@@@@@@@@@@@@@
-header {
-  background-color: $bg-clr;
-  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+.header-l {
+  background-color:#fff ;
+  z-index: 99; 
+  
+}
+.header-d {
+  background-color:#171c28 ;
   z-index: 99; 
   
 }
 
 
+.black{
+  background-color: red;
+}
 
 .navbar {
   width: 100%;
@@ -39,16 +50,32 @@ header {
   padding: 0 2.4rem;
 
   display: flex;
-  color: red;
+ 
  
 }
-.navL h4{
+.fff{
+  color: #fff;
+}
+.ooo{
+  color: #000;
+}
+.navL .h4-l{
   
   color: #000;
   font-weight: 700;
   position: absolute;
   left: 5.5rem;
   top: 5.1rem;
+  text-align:right;
+}
+.navL .h4-d{
+  
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 5.5rem;
+  top: 5.1rem;
+  text-align: right;
 }
 .navLogo {
  
@@ -72,7 +99,7 @@ header {
 .navItems {
   display: flex;
   align-items: center;
-  a {
+  .na-l{
     text-decoration: none;
     color: $nav-clr;
     text-align: center;
@@ -80,7 +107,6 @@ header {
     line-height: 1.4;
     font-size: 2.2rem;
     padding: 0 1.2rem;
-    transition: all .3s ease-in;
     &:hover{
       color: rgb(85, 25, 139);
       background-color: rgb(244, 244, 244);
@@ -88,6 +114,21 @@ header {
      
     }
   }
+  .na-d{
+    text-decoration: none;
+    color: rgb(231, 226, 226);
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0 1.2rem;
+    &:hover{
+      color: rgb(85, 25, 139);
+      cursor: pointer;
+     
+    }
+  }
+  
+    
+  
   .log {
     border: 1px solid #1c1d1f;
     border-radius: 0;
@@ -149,13 +190,16 @@ header {
       padding: 0;
     }
     .mIcon {
-      color: #000;
+      
       font-size: 32px;
     }
+  
     #tHam{
       justify-content: space-between;
       align-items: center;
+      background-color: #fff;
     }
+   
     .ibtn{
     
       svg{
@@ -165,6 +209,7 @@ header {
   }
   .wrapItems  .lk1 {
     padding: 1rem;
+    font-size: 2rem;
   }
   .navBox {
     .n3-none {

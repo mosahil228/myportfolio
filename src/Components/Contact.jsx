@@ -10,7 +10,7 @@ import l4 from "../images/l4.png";
 import l5 from "../images/l5.png";
 import { Link } from "react-scroll";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
       <section  className="section">
@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="contentBox">
             <div className="contentItem3">
               <div className="expCard expCard3" >
-                <h1>Reach Out to me!</h1>
+                <h1 className={props.mode ? "fff " : "ooo "}>Reach Out to me!</h1>
                 <p className="blogP">
                   DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR
                   ALL.
@@ -34,8 +34,8 @@ const Contact = () => {
                         <img className="sahilI" src={coverS} alt="123" />
                       </div>
                       <div className="dataContact">
-                        <h2>MOHD SAHIL </h2>
-                        <h4>
+                        <h2 className={props.mode ? "fff " : "ooo "}>MOHD SAHIL </h2>
+                        <h4 className={props.mode ? "fff " : "ooo "}>
                           <FaLocationArrow className="tA" />
                           Kanpur-Noida,Uttar Pradesh
                         </h4>
@@ -63,7 +63,7 @@ const Contact = () => {
                           <img className="leftImg" src={l3} alt="img" />
                         </a>
                         <a
-                          href="https://www.facebook.com/mo.sahil.228"
+                          href="https://www.instagram.com/million_dollar_boy.007/"
                           target="_blank"
                           rel="noreferrer noopener"
                         >

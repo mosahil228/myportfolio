@@ -6,6 +6,12 @@
 .font {
   font-family: "Montserrat", sans-serif;
 }
+.fff {
+  color: #fff;
+}
+.ooo {
+  color: #000;
+}
 .alertM div {
   padding: 1rem;
   display: flex;
@@ -44,9 +50,20 @@ $un-clr: #6600ff;
         .leftB {
           width: 50%;
           padding-top: 3rem;
+          p {
+            font-size: 2rem;
+            color: #868e96;
+            line-height: 4rem;
+          }
+
+          .h1-l {
+            color: #000;
+          }
+          .h1-d {
+            color: #fff;
+          }
           h1 {
             font-size: 5rem;
-            color: #000;
             line-height: 1.1;
             padding-bottom: 3rem;
             img {
@@ -133,9 +150,14 @@ $un-clr: #6600ff;
               }
             }
           }
-          p {
+          .ph-l {
             font-size: 2rem;
             color: #868e96;
+            line-height: 4rem;
+          }
+          .ph-d {
+            font-size: 2rem;
+            color: rgb(231, 226, 226);
             line-height: 4rem;
           }
         }
@@ -280,11 +302,16 @@ $un-clr: #6600ff;
       }
       display: flex;
       justify-content: center;
+      .tab-l {
+        color: #000;
+        font-weight: 600;
+      }
+      .tab-d {
+        color: #fff;
+      }
       .tab {
         font-size: 2rem;
-        color: #000;
         font-family: "Montserrat", sans-serif;
-        font-weight: 600;
       }
 
       .lab {
@@ -384,7 +411,6 @@ $un-clr: #6600ff;
       }
       h1 {
         font-size: 4rem;
-        color: #000;
         line-height: 1.1;
         font-weight: 400;
         padding-bottom: 2.5rem;
@@ -472,13 +498,12 @@ $un-clr: #6600ff;
 
       grid-gap: 1rem;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  
       .pic {
         position: relative;
         border-radius: 1rem;
-        box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
         cursor: pointer;
         transition: 0.5s;
+        box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
       }
 
       .pic img {
@@ -533,8 +558,7 @@ $un-clr: #6600ff;
         z-index: 3;
         cursor: pointer;
       }
-    
-  }
+    }
   }
 }
 // parameter section /\
@@ -542,7 +566,6 @@ $un-clr: #6600ff;
 .leftC {
   h1 {
     font-size: 4rem;
-    color: #000;
     line-height: 1.1;
     font-weight: 400;
     padding-bottom: 2.5rem;
@@ -638,20 +661,28 @@ $un-clr: #6600ff;
     background-position: 0 50%;
   }
 }
+.c-l{
+  background: #fff;
+}
+.cb-l{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cb-d{
+  box-shadow: #fff 0px 1px 17px;
+}
+
+
 .contentBox2 {
   font-family: "Montserrat", sans-serif;
   padding: 0 1rem;
   margin: 4rem 4.5rem 0;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background: #fff;
   background-size: 400% 400%;
   animation: change 10s ease-in-out infinite;
   margin-bottom: 4rem;
   .education {
     h1 {
       font-size: 4rem;
-      color: #000;
       line-height: 1.1;
       font-weight: 400;
       padding-bottom: 2.5rem;
@@ -670,14 +701,12 @@ $un-clr: #6600ff;
     }
     h5 {
       font-size: 2.8rem;
-      color: #000;
       line-height: 1.1;
       font-weight: 400;
       padding-bottom: 1rem;
     }
     .p1 {
       font-size: 1.7rem;
-      color: #000;
       line-height: 1.1;
       font-weight: 500;
       padding: 0.5rem 0;
@@ -696,7 +725,6 @@ $un-clr: #6600ff;
 .expCard {
   h1 {
     font-size: 4rem;
-    color: #000;
     line-height: 1.1;
     font-weight: 400;
     padding-bottom: 2.5rem;
@@ -717,13 +745,24 @@ $un-clr: #6600ff;
     padding-top: 4.6rem;
     position: relative;
   }
+  .c-l2{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  .c-l3{
+   
+    box-shadow: #fff 0px .5px 2px;
+    
+  }
+  
 
   .eCards {
     font-family: "Be Vietnam Pro", sans-serif;
     border-radius: 1.5rem;
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+  
     .eCards1 {
       filter: blur(0);
       height: 11rem;
@@ -757,19 +796,16 @@ $un-clr: #6600ff;
     }
     h2 {
       font-size: 2.5rem;
-      color: #000;
       font-weight: 400;
       text-align: center;
     }
     h1 {
       font-size: 2rem;
-      color: #000;
       font-weight: 400;
       text-align: center;
     }
     h3 {
       font-size: 1.8rem;
-      color: #000;
       font-weight: 400;
       text-align: center;
       padding-top: 0.5rem;
@@ -783,8 +819,7 @@ $un-clr: #6600ff;
       font-family: "Montserrat", sans-serif !important;
     }
 
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
   }
 }
 .blogP {
@@ -795,7 +830,6 @@ $un-clr: #6600ff;
   z-index: 2;
 }
 .bTitle {
-  color: #000;
   font-size: 2.2rem !important;
   line-height: 2.4rem;
   font-weight: 700;
@@ -895,13 +929,11 @@ $un-clr: #6600ff;
   }
   h4 {
     font-size: 2rem;
-    color: #000;
     font-weight: 400;
     padding-top: 1rem;
   }
   h2 {
     font-size: 2rem;
-    color: #000;
     font-weight: 700;
     padding-top: 0.5rem;
   }
@@ -1026,7 +1058,7 @@ $un-clr: #6600ff;
     padding: 2rem 0 2rem;
     margin: 0 auto;
   }
-  svg{
+  svg {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -1034,7 +1066,7 @@ $un-clr: #6600ff;
     font-size: 6rem;
     color: #fff;
     cursor: pointer;
-    &:hover{
+    &:hover {
       color: $un-clr;
     }
   }

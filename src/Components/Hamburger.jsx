@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -95,7 +95,7 @@ export default function PersistentDrawerLeft() {
           id="hamBg"
           className={clsx(classes.menuButton, open && classes.hide)}
         >
-          <MenuIcon className="mIcon" />
+          <MenuIcon className={props.mode ? "fff mIcon" : "ooo mIcon"} />
         </IconButton>
       </Toolbar>
 
@@ -108,7 +108,7 @@ export default function PersistentDrawerLeft() {
           paper: classes.drawerPaper,
         }}
       >
-        <div id="tHam" className={classes.drawerHeader}>
+        <div  className={classes.drawerHeader} id="tHam" >
           <div className="navLogo">
             <img src={LG} alt="logo" />
           </div>
@@ -143,7 +143,7 @@ export default function PersistentDrawerLeft() {
               <Link to="contact">Contact me</Link>
             </div>
             <div className="lk1 ">
-              <MuiSwitch />
+              <MuiSwitch toggleMode={props.toggleMode}/>
             </div>
           </div>
         </List>
