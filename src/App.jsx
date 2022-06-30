@@ -1,38 +1,40 @@
-import React ,{useState} from 'react';
-import Navbar from "./Navbar";
+import React, { useState, useEffect } from 'react';
 import Home from "./Home";
 import Footer from "./Footer";
 import "./sass/Resp.css";
-
-// import { Switch, Route, Redirect } from "react-router-dom";
+import SyncLoader from "react-spinners/SyncLoader";
+import { Switch, Route } from "react-router-dom";
+import Project from './Project';
 
 const App = () => {
-  const [mode, setMode] = useState(0);
-  const toggleMode=()=>{
-    console.log("yes i am");
-    if(mode===0){
-      setMode(1);
-      document.body.style.backgroundColor="#171c28";
-    }
-    else{
-      setMode(0);
-      document.body.style.backgroundColor="white";
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    let cancel = false;
+    setLoading(true)
+    setTimeout(() => {
+      if (cancel) return;
+      setLoading(false)
+    }, 2000);
+    return () => { 
+      cancel = true;
     }
     
-  }
-  
-  
+  }, []);
+ 
+
+
   return (
     <div >
-      <Navbar mode={mode} toggleMode={toggleMode}/>
-      {/* <Switch >
-        <Route exact path="/" component={Home}  />
-        <Redirect to="/" />;
-      </Switch> */}
-      <Home mode={mode} toggleMode={toggleMode}/>
-     
-      <Footer />
+      {loading ? <div className="loadC"><SyncLoader
+        color={"#0092E4"} loading={loading} size={18} margin={3} /> <h3>&#60; Code With Sahil /&#62;</h3></div> :<div>
+        <Switch>
+          <Route exact path="/" component={()=><Home  />}/>
+          <Route exact path="/projects" component={()=><Project />}/>
+        </Switch>
+        <Footer /></div>}
     </div>
   );
+
 };
 export default App;
+

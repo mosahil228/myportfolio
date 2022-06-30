@@ -3,6 +3,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap");
+.tBoxX{
+  transform: translateX(18px);
+}
+.tBoxY{
+  transform: translateX(-5px);
+}
+.tDiv{
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(212, 212, 212);
+  color: red;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  transition: all .1s ease;
+  .tBox{
+    transition: all .1s ease;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #0092E4;
+  }
+}
+
 .font {
   font-family: "Montserrat", sans-serif;
 }
@@ -23,7 +48,7 @@
 .alertM .cI {
   font-size: 20px;
 }
-$un-clr: #6600ff;
+$un-clr: #0092E4;
 .section {
   // .mTop{
   //   margin-top: 24rem!important;
@@ -126,6 +151,16 @@ $un-clr: #6600ff;
             }
           }
           .leftBtn {
+            display: flex;
+            flex-direction: column;
+            .proBtn{
+              background-color:#000!important;
+              &:hover{
+                background-color:#fff!important;
+                border-color: #000!important;
+              }
+              
+            }
             button {
               background-color: $un-clr;
               font-family: "Montserrat", sans-serif;
@@ -133,7 +168,8 @@ $un-clr: #6600ff;
               color: #fff;
               border-radius: 0.6rem;
               margin-right: 5rem;
-              margin-top: 3rem;
+              margin-top: 1rem;
+              width: 60%;
               font-size: 1.6rem;
               border-width: 0.1rem;
               opacity: 0.9;
@@ -298,6 +334,7 @@ $un-clr: #6600ff;
         width: 100%;
         .tabList > div > div {
           justify-content: center;
+          gap: 15px;
         }
       }
       display: flex;
@@ -582,6 +619,7 @@ $un-clr: #6600ff;
       position: relative;
       background: #f3efef;
       border-radius: 25px;
+      overflow: hidden;
       .meterSpan {
         display: block;
         height: 100%;
@@ -590,7 +628,7 @@ $un-clr: #6600ff;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-color: #aaa5ff;
+        background-color: #0092E4;
         position: relative;
         overflow: hidden;
         animation: meter 2s ease-in-out infinite alternate-reverse;
@@ -603,7 +641,7 @@ $un-clr: #6600ff;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-color: #aaa5ff;
+        background-color: #0092E4;
         position: relative;
         overflow: hidden;
         animation: meter1 2s ease-in-out infinite alternate-reverse;
@@ -616,7 +654,7 @@ $un-clr: #6600ff;
         border-bottom-right-radius: 6px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-color: #aaa5ff;
+        background-color: #0092E4;
         position: relative;
         overflow: hidden;
         animation: meter2 2s ease-in-out infinite alternate-reverse;
@@ -681,6 +719,7 @@ $un-clr: #6600ff;
   animation: change 10s ease-in-out infinite;
   margin-bottom: 4rem;
   .education {
+    padding: 1.6rem;
     h1 {
       font-size: 4rem;
       line-height: 1.1;
@@ -1015,7 +1054,7 @@ $un-clr: #6600ff;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 9999;
     border: none;
     outline: none;
     background-color: $un-clr;
@@ -1075,4 +1114,9 @@ $un-clr: #6600ff;
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+.contentItem3{
+  .lBtn{
+    margin-bottom: 8rem;
+  }
 }

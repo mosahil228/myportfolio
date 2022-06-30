@@ -24,10 +24,11 @@ import HomeMore from "./HomeMore";
 import Alert from "./Alert";
 import 'aos/dist/aos.css';
 import Sample from "../Svg/Sample.pdf";
+import { NavLink } from "react-router-dom";
+
 
 const HomeC = (props) => {
- 
- 
+
   useEffect(()=>{
     AOS.init();
     AOS.refresh();
@@ -36,7 +37,7 @@ const HomeC = (props) => {
  
   return (
     <div >
-
+     
       <section className="section"  >
         <div className="sContainer">
           <div className="alertCon">
@@ -52,6 +53,7 @@ const HomeC = (props) => {
               <div className="leftB respL" data-aos="fade-right" >
                 <h1 className={props.mode ? "h1-d" : "h1-l"}>
                   Hi all, I'm Sahil
+                  
                   <span className="emoji">
                     <img src={waveH} alt="wave" />
                   </span>
@@ -84,14 +86,14 @@ const HomeC = (props) => {
                     <img className="leftImg" src={l3} alt="img" />
                   </a>
                   <a
-                    href="https://www.instagram.com/million_dollar_boy.007/"
+                    href="https://www.instagram.com/sahillll._._/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
                     <img className="leftImg" src={l4} alt="img" />
                   </a>
                   <a
-                    href="https://twitter.com/mosahil1011"
+                    href="https://twitter.com/Mdb_Sahil"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -100,11 +102,11 @@ const HomeC = (props) => {
                 </div>
                 <div className="leftBtn">
                   <a
-                    href="https://fhrfsj96ywm.typeform.com/to/gf3UHcI1"
+                    href="mailto:mosahil228@gmail.com"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button>CONTACT ME</button>
+                    <button>CONTACT VIA EMAIL</button>
                   </a>
                   <a
                     href={Sample}
@@ -112,6 +114,8 @@ const HomeC = (props) => {
                     rel="noreferrer noopener"
                   >
                   <button>SEE MY RESUME</button></a>
+                  <NavLink to="/projects">
+                  <button className="proBtn">MY PROJECTS</button></NavLink>
                 </div>
               </div>
               <SvgIcon />

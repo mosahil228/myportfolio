@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+.mainNone{
+  display: none;
+}
+// toglle btn  
+
+.mainBlock{
+  display: block;
+}
+.loadC{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h3{
+    font-family: 'Alex Brush', cursive;
+    margin-top: 25px;
+    font-size: 30px;
+  }
+}
 @media(max-width:1200px){
   .galleryS {
     .galleryTab {
@@ -36,7 +59,9 @@
   
  
 }
+
 @media(max-width:750px){
+
   .sContainer{
     .high{
       height: auto!important;
@@ -205,9 +230,13 @@
 }
 }
 @media(max-width:600px){
+    .iBtn2{
+      button{
+        bottom: 48px;
+      }
+  }
   .galleryS {
     .galleryTab {
-  
       grid-auto-rows: 280px!important;
 }
 }

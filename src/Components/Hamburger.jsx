@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import MuiSwitch from "./MuiSwicth";
+import MuiSwitch from "./MuiSwitch";
 import LG from "../images/LG.png";
 const drawerWidth = 240;
 
@@ -143,7 +143,7 @@ export default function PersistentDrawerLeft(props) {
               <Link to="contact">Contact me</Link>
             </div>
             <div className="lk1 ">
-              <MuiSwitch toggleMode={props.toggleMode}/>
+              <MuiSwitch toggleMode={props.s}/>
             </div>
           </div>
         </List>

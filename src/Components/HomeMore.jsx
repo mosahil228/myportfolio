@@ -1,7 +1,6 @@
 import React from "react";
 import { SvgIcon3 } from "./SvgIcon";
 import galimg from "../images/galimg.png";
-import k12 from "../images/k12.png";
 import { FaPencilAlt } from "react-icons/fa";
 import ExpSec, { ExpSec2 } from "./ExpSec";
 import Contact from "./Contact";
@@ -85,29 +84,6 @@ const HomeMore = (props) => {
       {/* blogs sectionn.................. */}
       <ExpSec2 mode={props.mode} toggleMode={props.toggleMode}/>
       {/* blog section end ............ */}
-      {/* testimonial..... */}
-      <section id="testi" className="section">
-        <div className="sContainer">
-          <div className="contentBox">
-            <div className="contentItem3">
-              <div className="expCard expCard3 " >
-                <h1 className={props.mode ? "fff testiH" : "ooo testiH"}>Testimonials</h1>
-              </div>
-              <div className="testimon">
-                <div className="testiItem" >
-                  <div className="tItems wI">
-                  <img src={k12} alt="sa"/>
-                  </div>
-                  <div className="tItems2 wI">
-                  <img className="tIc" src={k12} alt="sa"/>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* contact section... */}
     
       <Contact mode={props.mode} toggleMode={props.toggleMode}/>

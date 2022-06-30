@@ -56,7 +56,7 @@ const ExpSec2 = (props) => {
 
                       <p className="bPP">
                         Click on it and go to my channel and watch free cool and
-                        awesome vedio.. DONT'WORRY data is updated soon.
+                        awesome video.. DONT'WORRY data is updated soon.
                       </p>
                       <div className="go-corner">
                         <div className="go-arrow">→</div>
@@ -79,7 +79,7 @@ const ExpSec2 = (props) => {
 
                       <p className="bPP">
                         Click on it and go to my channel and watch free cool and
-                        awesome vedio.. DONT'WORRY data is updated soon.
+                        awesome video.. DONT'WORRY data is updated soon.
                       </p>
                       <div className="go-corner">
                         <div className="go-arrow">→</div>

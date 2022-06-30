@@ -14,6 +14,8 @@ import h13 from "../banners/h13.jpg";
 import lo1 from "../banners/lo1.png";
 import lo2 from "../banners/lo2.png";
 import lo3 from "../banners/lo3.png";
+import n1 from "../banners/n1.png";
+import n2 from "../banners/n2.png";
 
 const Sdata= [
     {   
@@ -80,6 +82,16 @@ const Sdata= [
     {
         imgsrc:(h13),
         id:13,
+
+    },
+    {
+        imgsrc:(n1),
+        id:14,
+
+    },
+    {
+        imgsrc:(n2),
+        id:15,
 
     }
     

@@ -1,24 +1,43 @@
-@media (max-width: 1200px) {
-  .galleryS .galleryTab {
-    -ms-grid-columns: 1fr 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr 1fr !important;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+.mainNone {
+  display: none;
 }
 
+.mainBlock {
+  display: block;
+}
+
+.loadC {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loadC h3 {
+  font-family: "Alex Brush", cursive;
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .galleryS .galleryTab {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
 @media (min-width: 1350px) {
   .blog-card:hover:before {
-    -webkit-transform: scale(60);
-            transform: scale(60);
+    transform: scale(60);
     overflow: hidden;
   }
 }
-
 @media (min-width: 1600px) {
   .section .galleryS .galleryTab {
     grid-auto-rows: 36rem;
   }
 }
-
 @media (max-width: 775px) {
   .navBox .disN {
     display: none;
@@ -29,16 +48,13 @@
     left: auto;
   }
 }
-
 @media (max-width: 750px) {
   .sContainer .high {
     height: auto !important;
   }
+
   .contentBox .respC2 {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
   .contentBox .respC2 .respL {
     width: 100% !important;
@@ -59,10 +75,7 @@
     text-align: center;
   }
   .contentBox .resC1 {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
   .contentBox .resC1 .respL {
     width: 100% !important;
@@ -97,14 +110,16 @@
   .contentBox .resC1 .respS svg {
     width: 80%;
   }
+
   .galleryS .galleryTab {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
     grid-auto-rows: 300px !important;
   }
+
   .dataContact h2 {
     font-size: 3rem;
   }
+
   .conLinks a {
     padding: 2rem 1rem;
   }
@@ -112,6 +127,7 @@
     width: 8rem;
     height: 8rem;
   }
+
   .expCard3 h1 {
     text-align: center;
     font-size: 6rem;
@@ -120,11 +136,9 @@
     text-align: center;
     font-size: 2rem;
   }
+
   .testimon .testiItem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .testimon .testiItem .pI {
     padding-right: 0;
@@ -148,7 +162,6 @@
     width: 50%;
   }
 }
-
 @media (max-width: 715px) {
   .section .sContainer input {
     width: 100%;
@@ -161,14 +174,12 @@
     max-width: none;
   }
   .section .sContainer .content-box h1,
-  .section .sContainer .content-box p {
+.section .sContainer .content-box p {
     text-align: center;
   }
+
   .learnSec {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .learnSec img {
     margin-right: 4rem;
@@ -176,23 +187,25 @@
   .learnSec button {
     width: 100%;
   }
+
   .smallBar button {
     padding: 0rem 1rem;
   }
 }
-
 @media (max-width: 672px) {
   .expCards {
     gap: 4rem 1.8rem;
   }
 }
-
 @media (max-width: 600px) {
+  .iBtn2 button {
+    bottom: 48px;
+  }
+
   .galleryS .galleryTab {
     grid-auto-rows: 280px !important;
   }
 }
-
 @media (max-width: 575px) {
   .conLinks a {
     padding: 2rem 1rem;
@@ -202,23 +215,24 @@
     height: 6rem;
   }
 }
-
 @media (max-width: 560px) {
   .galleryS .galleryTab {
     grid-auto-rows: 245px !important;
   }
 }
-
 @media (max-width: 530px) {
   .smallBar {
     display: none;
   }
+
   .treeA {
     display: block;
   }
+
   .MuiAccordion-root.Mui-expanded {
     margin: 0 3rem;
   }
+
   .treeA {
     margin: 0 3rem;
   }
@@ -242,69 +256,64 @@
     opacity: 0.8;
   }
 }
-
 @media (max-width: 510px) {
   .conLinks a {
-    padding: 2rem .5rem;
+    padding: 2rem 0.5rem;
   }
   .conLinks a img {
     width: 5rem;
     height: 5rem;
   }
+
   .galleryS .galleryTab {
     grid-auto-rows: 200px !important;
   }
+
   .section .sContainer .infoS .tab {
     font-size: 1.5rem;
   }
 }
-
 @media (max-width: 510px) and (max-width: 460px) {
   .section .sContainer .infoS .tab {
     font-size: 1.5rem;
     min-width: 4rem;
   }
+
   .contentBox .resC1 .respL .leftBtn {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .contentBox .resC1 .respL .leftBtn button {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
+
   .section .sContainer .contentBox .contentItem .leftB p {
     line-height: normal;
   }
 }
-
 @media (max-width: 510px) and (max-width: 430px) {
   .section .sContainer .infoS .tab {
     font-size: 1.2rem;
     min-width: 0rem;
   }
+
   .galleryS .galleryTab {
     grid-auto-rows: 180px !important;
   }
 }
-
 @media (max-width: 510px) and (max-width: 390px) {
   .section .sContainer .infoS .tab {
     font-size: 1rem;
   }
+
   .conLinks {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
-
 @media (max-width: 510px) and (max-width: 370px) {
   .sContainer2 .heading {
     font-size: 2.4rem;
     text-align: center;
   }
-}
-/*# sourceMappingURL=Resp.css.map */
+}/*# sourceMappingURL=Resp.css.map */
