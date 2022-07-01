@@ -42,7 +42,7 @@
   .navBox .disN {
     display: none;
   }
-  .navBox h4 {
+  .navBox svg h4 {
     top: 6.1rem !important;
     right: 3rem !important;
     left: auto;

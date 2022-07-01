@@ -77,6 +77,21 @@ html {
   justify-content: space-between;
   width: 100vw;
 }
+.navBox .hB {
+  color: #000 !important;
+}
+.navBox .hW {
+  color: #fff !important;
+}
+.navBox svg {
+  font-size: 32px;
+  margin-right: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.navBox svg:hover {
+  color: rgb(52, 52, 52);
+}
 .navBox .navR8 {
   display: flex;
   align-items: center;
@@ -155,14 +170,10 @@ html {
   }
 }
 @media (max-width: 775px) {
-  .navbar .HamBMM {
-    display: block;
-    width: 90px;
+  .navBox svg {
+    display: block !important;
   }
-  .navbar #hamBg {
-    margin-right: 0;
-    padding: 0;
-  }
+
   .navbar .mIcon {
     font-size: 32px;
   }
@@ -465,4 +476,57 @@ html {
   .pMainSection .pMainDiv .pShortApps .pApps {
     margin-bottom: 4rem;
   }
+}
+.hiddenBar {
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.99;
+  background-color: #4c4177;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  z-index: 999999;
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+
+.hLeft {
+  left: 0 !important;
+  transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+
+.hMainItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 3rem;
+}
+.hMainItem .hSocial a svg {
+  color: #fff;
+  font-size: 22px !important;
+  margin-right: 2rem;
+}
+.hMainItem .hSocial a svg:hover {
+  color: #000;
+}
+.hMainItem svg {
+  color: #fff;
+  font-size: 25px;
+}
+.hMainItem svg:hover {
+  color: #000;
+}
+
+.hamFlex {
+  margin: 4rem 3rem;
+}
+.hamFlex .hamItems {
+  margin-bottom: 20px;
+}
+.hamFlex .hamItems a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.hamFlex .hamItems a:hover {
+  color: #000;
 }/*# sourceMappingURL=App.css.map */

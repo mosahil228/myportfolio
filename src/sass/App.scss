@@ -101,6 +101,24 @@ html {
   @include aFlex;
   justify-content: space-between;
   width: 100vw;
+  .hB{
+    color: #000!important;
+  }
+  .hW{
+    color: #fff!important;
+  }
+
+  svg {
+    font-size: 32px;
+    margin-right: 2rem;
+    display: none;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(52, 52, 52);
+
+    }
+  }
 
   .navR8 {
     display: flex;
@@ -202,16 +220,14 @@ html {
 }
 
 @media (max-width: 775px) {
-  .navbar {
-    .HamBMM {
-      display: block;
-      width: 90px;
+  .navBox {
+    svg {
+      display: block!important;
     }
+  }
 
-    #hamBg {
-      margin-right: 0;
-      padding: 0;
-    }
+  .navbar {
+
 
     .mIcon {
 
@@ -225,7 +241,6 @@ html {
     }
 
     .ibtn {
-
       svg {
         font-size: 32px;
       }
@@ -241,6 +256,8 @@ html {
     .n3-none {
       display: none;
     }
+  
+    
 
     .log {
       display: none;
@@ -517,10 +534,12 @@ html {
     }
   }
 }
+
 .pMainHeading2 {
   h2 {
     margin-top: 6rem !important;
-  span {
+
+    span {
       position: relative;
 
       &::after {
@@ -606,4 +625,62 @@ html {
     }
   }
 
+}
+
+//hamburger item
+.hiddenBar {
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.99;
+  background-color: #4c4177;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  z-index: 999999;
+  transition: all 0.5s cubic-bezier(.79,.14,.15,.86);
+}
+
+.hLeft {
+  left: 0 !important;
+  transition: all 0.5s cubic-bezier(.79,.14,.15,.86);
+}
+.hMainItem{
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 3rem;
+  .hSocial{
+    a svg{
+      color: #fff;
+      font-size: 22px!important;
+      margin-right: 2rem;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+  svg{
+    color: #fff;
+    font-size: 25px;
+    &:hover{
+      color: #000;
+    }
+   
+  }
+}
+.hamFlex{
+  margin: 4rem 3rem;
+  
+  .hamItems{
+    margin-bottom: 20px;
+    a{
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+ 
 }
