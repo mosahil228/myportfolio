@@ -28,8 +28,8 @@ const App = () => {
       {loading ? <div className="loadC"><SyncLoader
         color={"#0092E4"} loading={loading} size={18} margin={3} /> <h3>&#60; Code With Sahil /&#62;</h3></div> :<div>
         <Switch>
-          <Route exact path="/" component={()=><Home  />}/>
-          <Route exact path="/projects" component={()=><Project />}/>
+          <Route exact path="/" component={Home }/>
+          <Route exact path="/projects" component={Project}/>
         </Switch>
         <Footer /></div>}
     </div>
