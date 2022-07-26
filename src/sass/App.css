@@ -173,7 +173,6 @@ html {
   .navBox svg {
     display: block !important;
   }
-
   .navbar .mIcon {
     font-size: 32px;
   }
@@ -185,12 +184,10 @@ html {
   .navbar .ibtn svg {
     font-size: 32px;
   }
-
   .wrapItems .lk1 {
     padding: 1rem;
     font-size: 2rem;
   }
-
   .navBox .n3-none {
     display: none;
   }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Home from "./Home";
-import Footer from "./Footer";
 import "./sass/Resp.css";
 import SyncLoader from "react-spinners/SyncLoader";
 import { Switch, Route } from "react-router-dom";
@@ -31,7 +30,7 @@ const App = () => {
           <Route exact path="/" component={Home }/>
           <Route exact path="/projects" component={Project}/>
         </Switch>
-        <Footer /></div>}
+        </div>}
     </div>
   );
 

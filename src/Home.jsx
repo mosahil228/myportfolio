@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import HomeC from './Components/HomeC';
 import Navbar from "./Navbar"
+import Footer from './Footer';
 
 
 
@@ -23,6 +24,7 @@ const Home = (props) => {
         <>
             <Navbar mode={mode} toggleMode={toggleMode} />
             <HomeC mode={mode} toggleMode={toggleMode} />
+            <Footer />
         </>
     )
 }

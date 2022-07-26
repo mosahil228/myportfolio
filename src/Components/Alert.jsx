@@ -28,7 +28,7 @@ export default function TransitionAlerts() {
             </IconButton>
           }
         >
-          Dear Visiter, This website is an under production..
+          Some changes are left in this website, will be updated soon...
         </Alert>
       </Collapse>
     </div>

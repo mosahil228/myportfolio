@@ -50,6 +50,9 @@ const Enavbar = (props) => {
 
               </div>
               <div className="navR8 disN" >
+              <div className="navItems ">
+                  <NavLink className={props.mode ? "na-d" : "na-l"} to="/projects">Projects</NavLink>
+                </div>
 
                 <div className="navItems " >
                   <Link className={props.mode ? "na-d" : "na-l"} style={{ color: `$"{props.mode}"` }} to="skills" >Skills</Link>
@@ -57,9 +60,7 @@ const Enavbar = (props) => {
                 <div className="navItems ">
                   <Link className={props.mode ? "na-d" : "na-l"} to="experience">Work experience</Link>
                 </div>
-                <div className="navItems ">
-                  <NavLink className={props.mode ? "na-d" : "na-l"} to="/projects">Projects</NavLink>
-                </div>
+                
 
                 <div className="navItems ">
                   <Link className={props.mode ? "na-d" : "na-l"} to="design">Designs</Link>

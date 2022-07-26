@@ -52,7 +52,6 @@
   .sContainer .high {
     height: auto !important;
   }
-
   .contentBox .respC2 {
     flex-direction: column-reverse !important;
   }
@@ -110,16 +109,13 @@
   .contentBox .resC1 .respS svg {
     width: 80%;
   }
-
   .galleryS .galleryTab {
     grid-template-columns: 1fr 1fr !important;
     grid-auto-rows: 300px !important;
   }
-
   .dataContact h2 {
     font-size: 3rem;
   }
-
   .conLinks a {
     padding: 2rem 1rem;
   }
@@ -127,7 +123,6 @@
     width: 8rem;
     height: 8rem;
   }
-
   .expCard3 h1 {
     text-align: center;
     font-size: 6rem;
@@ -136,7 +131,6 @@
     text-align: center;
     font-size: 2rem;
   }
-
   .testimon .testiItem {
     flex-direction: column-reverse;
   }
@@ -177,7 +171,6 @@
 .section .sContainer .content-box p {
     text-align: center;
   }
-
   .learnSec {
     flex-direction: column;
   }
@@ -187,7 +180,6 @@
   .learnSec button {
     width: 100%;
   }
-
   .smallBar button {
     padding: 0rem 1rem;
   }
@@ -201,7 +193,6 @@
   .iBtn2 button {
     bottom: 48px;
   }
-
   .galleryS .galleryTab {
     grid-auto-rows: 280px !important;
   }
@@ -224,15 +215,12 @@
   .smallBar {
     display: none;
   }
-
   .treeA {
     display: block;
   }
-
   .MuiAccordion-root.Mui-expanded {
     margin: 0 3rem;
   }
-
   .treeA {
     margin: 0 3rem;
   }
@@ -264,11 +252,9 @@
     width: 5rem;
     height: 5rem;
   }
-
   .galleryS .galleryTab {
     grid-auto-rows: 200px !important;
   }
-
   .section .sContainer .infoS .tab {
     font-size: 1.5rem;
   }
@@ -278,7 +264,6 @@
     font-size: 1.5rem;
     min-width: 4rem;
   }
-
   .contentBox .resC1 .respL .leftBtn {
     display: flex;
     justify-content: space-between;
@@ -287,7 +272,6 @@
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
-
   .section .sContainer .contentBox .contentItem .leftB p {
     line-height: normal;
   }
@@ -297,7 +281,6 @@
     font-size: 1.2rem;
     min-width: 0rem;
   }
-
   .galleryS .galleryTab {
     grid-auto-rows: 180px !important;
   }
@@ -306,7 +289,6 @@
   .section .sContainer .infoS .tab {
     font-size: 1rem;
   }
-
   .conLinks {
     flex-wrap: wrap;
   }
