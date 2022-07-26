@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import Sdata ,{Sdata2} from "./Sdata";
-import CloseIcon from "@material-ui/icons/Close";
+import { MdClose } from 'react-icons/md';
 
 
 const Homecc = () => {
@@ -16,7 +16,7 @@ const Homecc = () => {
     <>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgsrc} alt="123" />
-        <CloseIcon  onClick={()=> setModel(false)} />
+        <MdClose  onClick={()=> setModel(false)} />
       </div>
       {Sdata.map((val,index) => {
         return (
@@ -40,7 +40,7 @@ const Homecc2 = () => {
     <>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgsrc} alt="123" />
-        <CloseIcon  onClick={()=> setModel(false)} />
+        <MdClose  onClick={()=> setModel(false)} />
       </div>
       {Sdata2.map((val,index) => {
         return (
