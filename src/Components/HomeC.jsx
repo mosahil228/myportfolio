@@ -21,7 +21,6 @@ import { FaDatabase } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaStudiovinari } from "react-icons/fa";
 import HomeMore from "./HomeMore";
-import Alert from "./Alert";
 import 'aos/dist/aos.css';
 import Sample from "../Svg/Sample.pdf";
 import { NavLink } from "react-router-dom";
@@ -37,14 +36,6 @@ const HomeC = (props) => {
  
   return (
     <div >
-     
-      <section className="section"  >
-        <div className="sContainer">
-          <div className="alertCon">
-            <Alert />
-          </div>
-        </div>
-      </section>
       {/* style={{color: props.mode===1 ?"red" : "blue"}} */}
       <section id="home" className="section" >
         <div className="sContainer"  >
