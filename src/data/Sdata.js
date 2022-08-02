@@ -100,7 +100,7 @@ const Sdata5 = [
     {
         name: "Codeswear",
         img: (best3),
-        link:"https://sashcart.netlify.app/",
+        link:"https://github.com/mosahil228/Codeswear",
     },
     {
         name: "Flipcart clone",
@@ -377,8 +377,8 @@ const Sdata4 = [
         s1:"E-com Shopping-store",
         s2:"Mern Stack, Tailwind css, Paytm Payments gateaway...",
         para:"User can Create an account, add to cart items, purchase item,and all e-com services are available.",
-        link:"https://microsoft-store-clone.vercel.app/",
-        link2:"https://github.com/mosahil228/microsoft-store-clone"
+        link:"https://github.com/mosahil228/Codeswear",
+        link2:"https://github.com/mosahil228/Codeswear"
     },
     {
         name: "Flipcart",
