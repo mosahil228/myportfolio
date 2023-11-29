@@ -26,6 +26,7 @@ import api1 from "../images/api1.svg"
 import api2 from "../images/api2.svg"
 import api3 from "../images/api3.svg"
 import api4 from "../images/api4.svg"
+import cw from "../images/cw.svg"
 import smart1 from "../images/smart1.svg"
 import smart2 from "../images/smart2.svg"
 const Sdata = [{
@@ -163,6 +164,12 @@ const Sdata6 = [
 
 ]
 const Sdata8 = [
+    {
+        name: "Cyrpto wallet app",
+        img: (cw),
+        link:"https://cryptowallet-sahil.netlify.app/",
+        desc:"Add to cart and purchase currency funtionality"
+    },
     {
         name: "Get-movie app",
         img: (api1),
